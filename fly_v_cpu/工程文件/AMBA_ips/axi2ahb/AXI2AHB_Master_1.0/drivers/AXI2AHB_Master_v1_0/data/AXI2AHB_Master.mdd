@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER AXI2AHB_Master
+	OPTION supported_peripherals = (AXI2AHB_Master);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = AXI2AHB_Master;
+END DRIVER

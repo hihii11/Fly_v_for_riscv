@@ -1,0 +1,351 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 21 23:56:16 2022
+# Process ID: 21744
+# Current directory: D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_gpio_0_0_synth_1
+# Command line: vivado.exe -log risc_v_soc_test_AHB_Lite_gpio_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source risc_v_soc_test_AHB_Lite_gpio_0_0.tcl
+# Log file: D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_gpio_0_0_synth_1/risc_v_soc_test_AHB_Lite_gpio_0_0.vds
+# Journal file: D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_gpio_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source risc_v_soc_test_AHB_Lite_gpio_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado/project/CPU/AMBA_ips'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado/project/CPU/rv-ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+Command: synth_design -top risc_v_soc_test_AHB_Lite_gpio_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 23624 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 413.242 ; gain = 96.617
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'risc_v_soc_test_AHB_Lite_gpio_0_0' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ip/risc_v_soc_test_AHB_Lite_gpio_0_0/synth/risc_v_soc_test_AHB_Lite_gpio_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'AHB_Lite_gpio' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/AHB_Lite_gpio.v:1]
+	Parameter GPIO_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'GPIO_AHB_Slave_pipe_S0_inist' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:1]
+	Parameter GPIO_WIDTH bound to: 8 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter ADDR_SHIFT bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:122]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:175]
+INFO: [Synth 8-6157] synthesizing module 'AXI4_gpio' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/AXI_gpio.v:1]
+	Parameter GPIO_WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'AXI4_gpio' (1#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/AXI_gpio.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'INT_MODE' does not match port width (8) of module 'AXI4_gpio' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:196]
+WARNING: [Synth 8-689] width (31) of port connection 'INT_EN' does not match port width (8) of module 'AXI4_gpio' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:197]
+WARNING: [Synth 8-6014] Unused sequential element s_hburst_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:89]
+WARNING: [Synth 8-6014] Unused sequential element s_hsize_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:90]
+WARNING: [Synth 8-6014] Unused sequential element s_hport_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:91]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg2_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:113]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'GPIO_AHB_Slave_pipe_S0_inist' (2#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:1]
+WARNING: [Synth 8-350] instance 'GPIO_AHB_Slave_pipe_S00_inist' of module 'GPIO_AHB_Slave_pipe_S0_inist' requires 20 connections, but only 19 given [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/AHB_Lite_gpio.v:39]
+INFO: [Synth 8-6155] done synthesizing module 'AHB_Lite_gpio' (3#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/ed3d/src/AHB_Lite_gpio.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'risc_v_soc_test_AHB_Lite_gpio_0_0' (4#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ip/risc_v_soc_test_AHB_Lite_gpio_0_0/synth/risc_v_soc_test_AHB_Lite_gpio_0_0.v:58]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HBURST[2]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HBURST[1]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HBURST[0]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HSIZE[2]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HSIZE[1]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HSIZE[0]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HPORT[3]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HPORT[2]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HPORT[1]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HPORT[0]
+WARNING: [Synth 8-3331] design GPIO_AHB_Slave_pipe_S0_inist has unconnected port S_HREAD_i
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 469.816 ; gain = 153.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 469.816 ; gain = 153.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 469.816 ; gain = 153.191
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 781.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 781.938 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 784.691 ; gain = 2.754
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 784.691 ; gain = 468.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 784.691 ; gain = 468.066
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:42 . Memory (MB): peak = 784.691 ; gain = 468.066
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "slv_reg0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_data_out" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:43 . Memory (MB): peak = 784.691 ; gain = 468.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module AXI4_gpio 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+Module GPIO_AHB_Slave_pipe_S0_inist 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 5     
+	   7 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3917] design risc_v_soc_test_AHB_Lite_gpio_0_0 has port s0_hresp[1] driven by constant 0
+INFO: [Synth 8-3917] design risc_v_soc_test_AHB_Lite_gpio_0_0 has port s0_hresp[0] driven by constant 0
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hburst[2]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hburst[1]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hburst[0]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hsize[2]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hsize[1]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hsize[0]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hport[3]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hport[2]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hport[1]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hport[0]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_gpio_0_0 has unconnected port s0_hready_i
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/GPIO_AHB_Slave_pipe_S00_inist/slv_wr_en_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:46 . Memory (MB): peak = 784.691 ; gain = 468.066
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:01:11 . Memory (MB): peak = 796.809 ; gain = 480.184
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:01:11 . Memory (MB): peak = 796.957 ; gain = 480.332
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:01:12 . Memory (MB): peak = 816.832 ; gain = 500.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 816.832 ; gain = 500.207
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 816.832 ; gain = 500.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 816.832 ; gain = 500.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 816.832 ; gain = 500.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 816.832 ; gain = 500.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 816.832 ; gain = 500.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT3 |     8|
+|3     |LUT4 |    30|
+|4     |LUT5 |    41|
+|5     |LUT6 |     9|
+|6     |FDCE |     8|
+|7     |FDRE |   174|
++------+-----+------+
+
+Report Instance Areas: 
++------+----------------------------------+-----------------------------+------+
+|      |Instance                          |Module                       |Cells |
++------+----------------------------------+-----------------------------+------+
+|1     |top                               |                             |   271|
+|2     |  inst                            |AHB_Lite_gpio                |   271|
+|3     |    GPIO_AHB_Slave_pipe_S00_inist |GPIO_AHB_Slave_pipe_S0_inist |   271|
+|4     |      gpio_inist0                 |AXI4_gpio                    |    42|
++------+----------------------------------+-----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:01:16 . Memory (MB): peak = 816.832 ; gain = 500.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:55 . Memory (MB): peak = 816.832 ; gain = 185.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:01:16 . Memory (MB): peak = 816.832 ; gain = 500.207
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.508 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:01:21 . Memory (MB): peak = 820.508 ; gain = 514.266
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.508 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_gpio_0_0_synth_1/risc_v_soc_test_AHB_Lite_gpio_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP risc_v_soc_test_AHB_Lite_gpio_0_0, cache-ID = a904ce38dd10d548
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 820.508 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_gpio_0_0_synth_1/risc_v_soc_test_AHB_Lite_gpio_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file risc_v_soc_test_AHB_Lite_gpio_0_0_utilization_synth.rpt -pb risc_v_soc_test_AHB_Lite_gpio_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 21 23:57:52 2022...

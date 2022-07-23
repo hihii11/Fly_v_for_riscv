@@ -1,0 +1,108 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 48863c47e4f24c87ab38577729ee75d3 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xlconcat_v2_1_1 -L blk_mem_gen_v8_4_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot rv_soc_tb_behav xil_defaultlib.rv_soc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'CLK_DIV' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:249]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'SPI_STEP' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:250]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'SPI_INTERVAL' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:251]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/4980/src/SPI_LCD.v:147]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rd_en' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/4980/src/SPI_LCD.v:148]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 1 for port 'data_qvld' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/4980/src/SPI_LCD.v:170]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 8 for port 'INT_MODE' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:196]
+WARNING: [VRFC 10-3091] actual bit length 31 differs from formal bit length 8 for port 'INT_EN' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v:197]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'addra' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/rv_if_id.v:115]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 11 for port 'addrb' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/rv_if_id.v:120]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'addr_a' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/rv_mem.v:133]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'addr_b' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/rv_mem.v:138]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 32 for port 'CSR2PLIC_IE' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/risc_v_top.v:311]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'MIO_T' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/risc_v_top.v:313]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'MIO_O' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/risc_v_top.v:314]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 32 for port 'MIO_I' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/risc_v_top.v:315]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 12 for port 'EXT_IRQ' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/risc_v_top.v:360]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 4 for port 'EXT_IRQ' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/rv_irq_ctl.v:218]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/AHB_Master_pipe.v:111]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'fifo_en' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/AHB_Master_pipe.v:113]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/AHB_Master_pipe.v:130]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'fifo_en' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/AHB_Master_pipe.v:132]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'wr_en' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/AHB_Master_pipe.v:149]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'fifo_en' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/AHB_Master_pipe.v:151]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 6 for port 'wr_data' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/AHB_Master_pipe.v:153]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 6 for port 'rd_data' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/AHB_Master_pipe.v:154]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'rd_en' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/AHB_Master_pipe.v:227]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'fifo_en' [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/AHB_Master_pipe.v:228]
+WARNING: [VRFC 10-3705] select index 12 into 'CSR2PLIC_IE' is out of bounds [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/rv_plic.v:120]
+WARNING: [VRFC 10-3283] element index 12 into 'ext_irq_from_gate' is out of bounds [D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/46a6/src/rv_plic.v:122]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/ed3d/src/AHB_Lite_gpio.v" Line 1. Module AHB_Lite_gpio doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/ed3d/src/GPIO_AHB_Slave_pipe_S0_inist.v" Line 1. Module GPIO_AHB_Slave_pipe_S0_inist_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.ip_user_files/bd/risc_v_soc_test/ipshared/ed3d/src/AXI_gpio.v" Line 1. Module AXI4_gpio doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IOBUF
+Compiling module xil_defaultlib.IIC_Master_2
+Compiling module xil_defaultlib.IIC_AHB_Lite_pipe_inist_default
+Compiling module xil_defaultlib.AHB_Lite_IIC
+Compiling module xil_defaultlib.risc_v_soc_test_AHB_Lite_IIC_0_0
+Compiling module xil_defaultlib.RAM_for_fifo_LUT(ADDR_WIDTH=5,DA...
+Compiling module xil_defaultlib.FIFO
+Compiling module xil_defaultlib.SPI_write
+Compiling module xil_defaultlib.SPI_LCD
+Compiling module xil_defaultlib.SPI_AHB_Slave_pipe_S0_inist_defa...
+Compiling module xil_defaultlib.AHB_Lite_SPI_LCD
+Compiling module xil_defaultlib.risc_v_soc_test_AHB_Lite_SPI_LCD...
+Compiling module xil_defaultlib.AXI4_gpio
+Compiling module xil_defaultlib.GPIO_AHB_Slave_pipe_S0_inist_def...
+Compiling module xil_defaultlib.AHB_Lite_gpio
+Compiling module xil_defaultlib.risc_v_soc_test_AHB_Lite_gpio_0_...
+Compiling module xil_defaultlib.AHB_smtconnect_pipe(DEVICE_REG_A...
+Compiling module xil_defaultlib.AHB_M2S_cmtcnt_pipe(DEVICE_REG_A...
+Compiling module xil_defaultlib.risc_v_soc_test_AHB_M2S_cmtcnt_p...
+Compiling module xil_defaultlib.My_Concat_4
+Compiling module xil_defaultlib.risc_v_soc_test_My_Concat_4_0_0
+Compiling module xil_defaultlib.risc_v_soc_test_My_Concat_4_0_1
+Compiling module xil_defaultlib.AHB_Slave_pipe_default
+Compiling module xil_defaultlib.S0_AHB_Slave_pipe
+Compiling module xil_defaultlib.risc_v_soc_test_S0_AHB_Slave_pip...
+Compiling module xil_defaultlib.rv_pc(PC_START_ADDRESS=32'sb0110...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_output_stage(...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_2.blk_mem_gen_v8_4_2(C_FAMILY="zyn...
+Compiling module xil_defaultlib.blk_mem_gen_0
+Compiling module xil_defaultlib.rv_if_id
+Compiling module xil_defaultlib.rv_id
+Compiling module xil_defaultlib.MUL
+Compiling module xil_defaultlib.DIV
+Compiling module xil_defaultlib.rv_alu
+Compiling module xil_defaultlib.rv_csr_alu
+Compiling module xil_defaultlib.rv_ex
+Compiling module xil_defaultlib.RAM_LUT_for_mem
+Compiling module xil_defaultlib.rv_mem
+Compiling module xil_defaultlib.rv_wb
+Compiling module xil_defaultlib.rv_register
+Compiling module xil_defaultlib.cycle_counter
+Compiling module xil_defaultlib.rv_timer64
+Compiling module xil_defaultlib.rv_csr_reg
+Compiling module xil_defaultlib.synchronizer_1
+Compiling module xil_defaultlib.rv_plic(PLIC_IRQ_NUM=12)
+Compiling module xil_defaultlib.rv_irq_ctl(PLIC_IRQ_NUM=12)
+Compiling module xil_defaultlib.rv_mio(GPIO_WIDTH=8)
+Compiling module xil_defaultlib.RAM_for_fifo_LUT(ADDR_WIDTH=3,DA...
+Compiling module xil_defaultlib.FIFO(DATA_DEPTH=8,ADDR_WIDTH=3)
+Compiling module xil_defaultlib.RAM_for_fifo_LUT(DATA_WIDTH=6,AD...
+Compiling module xil_defaultlib.FIFO(DATA_WIDTH=6,DATA_DEPTH=8,A...
+Compiling module xil_defaultlib.AHB_Master_pipe
+Compiling module xil_defaultlib.M0_AHB_S2AHB_pipe(C_M2S_BASE_ADD...
+Compiling module xil_defaultlib.fly_v_top(MIO_WIDTH=8,USER_EXT_I...
+Compiling module xil_defaultlib.risc_v_soc_test_fly_v_top_0_0
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat(dout_wi...
+Compiling module xil_defaultlib.risc_v_soc_test_xlconcat_0_0
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat(dout_wi...
+Compiling module xil_defaultlib.risc_v_soc_test_xlconcat_1_0
+Compiling module xil_defaultlib.risc_v_soc_test
+Compiling module xil_defaultlib.risc_v_soc_test_wrapper
+Compiling module xil_defaultlib.rv_soc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot rv_soc_tb_behav

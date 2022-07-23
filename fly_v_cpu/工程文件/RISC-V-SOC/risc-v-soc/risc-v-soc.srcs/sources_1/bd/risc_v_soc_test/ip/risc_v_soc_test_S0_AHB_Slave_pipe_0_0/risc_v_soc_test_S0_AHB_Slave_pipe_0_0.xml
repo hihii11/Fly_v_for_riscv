@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>risc_v_soc_test_S0_AHB_Slave_pipe_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>s0_HCLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_HCLK</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S0_HCLK.FREQ_HZ"/>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S0_HCLK.ASSOCIATED_RESET">s0_nREST</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_HCLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_HCLK.CLK_DOMAIN">risc_v_soc_test_REF_CLK</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_HCLK.ASSOCIATED_BUSIF"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S0_HCLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>s0_nREST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_nREST</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_NREST.POLARITY">ACTIVE_LOW</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S0_NREST.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S0_AHB</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="ahblite" spirit:version="2.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="ahblite_rtl" spirit:version="2.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HTRANS</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_htrans</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hport</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HSIZE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hsize</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HRDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hrdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HWRITE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hwrite</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_haddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HBURST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hburst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HWDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hwdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>S0_AHB_Slave_pipe</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Jul 21 15:55:18 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:200d44ab</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>risc_v_soc_test_S0_AHB_Slave_pipe_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Jul 21 15:55:18 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:200d44ab</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>S0_AHB_Slave_pipe</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Jul 21 15:55:18 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:142ecd48</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>risc_v_soc_test_S0_AHB_Slave_pipe_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Jul 21 15:55:18 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:142ecd48</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Jul 21 15:57:52 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:200d44ab</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>s0_HCLK</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_nREST</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_haddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AHB_ADDR_WIDTH&apos;)) - 1)">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hwrite</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_htrans</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hburst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hsize</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hport</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hready_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hready_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hsel</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hwdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AHB_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hrdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AHB_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S_AHB_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S Ahb Data Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AHB_DATA_WIDTH">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S_AHB_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S Ahb Addr Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AHB_ADDR_WIDTH">5</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/385a/src/AHB_Slave_pipe.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/385a/src/S0_AHB_Slave_pipe.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/risc_v_soc_test_S0_AHB_Slave_pipe_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/385a/src/AHB_Slave_pipe.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/385a/src/S0_AHB_Slave_pipe.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/risc_v_soc_test_S0_AHB_Slave_pipe_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>risc_v_soc_test_S0_AHB_Slave_pipe_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>risc_v_soc_test_S0_AHB_Slave_pipe_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>risc_v_soc_test_S0_AHB_Slave_pipe_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>risc_v_soc_test_S0_AHB_Slave_pipe_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>risc_v_soc_test_S0_AHB_Slave_pipe_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>S0_AHB_Slave_pipe_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S_AHB_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S Ahb Data Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AHB_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S_AHB_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S Ahb Addr Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AHB_ADDR_WIDTH">5</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">risc_v_soc_test_S0_AHB_Slave_pipe_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>S0_AHB_Slave_pipe_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>15</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b28692f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c41937b_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dc731ca_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64a47ac0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@87d65f0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4126d63f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ac92d82_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1df98a2_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68edd53a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58ea3e7b_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c09ccd8_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@212e5f0f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@516dbc2c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@564ef749_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c75a0c8_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50306135_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fcb1e93_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fe5a5aa_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@732addb1_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dae893d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@17611a82_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79866a19_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e5232da_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f6e8758_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3aa165fc_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@573beb96_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2535ffe6_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@558201c3_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e7b6aea_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51a4eb3_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11fb29ee_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18fb05c7_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57ca1804_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f556b6c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@394e9383_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ff3f21a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@347b11d2_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bae7ae9_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59040087_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d2b5569_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e982cc8_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7413fac7_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a277a6f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c380024_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f7fc39d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@770f671f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5435a004_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45c0a461_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39fdc87f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bfd41b1_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@129a24d3_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6037ac9a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f243e83_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13c6fa61_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ec76bba_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@93c72e_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4195104f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25ad433f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43f49859_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f47e866_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71eb6905_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22254914_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1717ef12_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cc245c1_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f91d24b_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7aadd066_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52b6b9a0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74a297a0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@dfb2e5c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13113171_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a889380_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4956ead1_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49bd9548_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67ba6463_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1258e822_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4087272a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bdfd81f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7641529b_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2896003a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2365eee0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@505c7f67_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29f05b55_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@748f2951_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fa84f20_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2deed18c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c47e5be_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f20a14e_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c445e6d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52c6d637_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79158a57_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6656251d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@186d4008_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@eeba96e_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@780d8749_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40769c6a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21bb35fe_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d8bccc7_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dd6fa6_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50b9c32c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73dd6424_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7cb4c1d9_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47c769c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f5416ea_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20dc8ecd_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@577eae99_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f8f42a4_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@401543f1_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32ddac0e_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c0e3f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45353362_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c525e00_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@474dfd50_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d36282a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@225454d9_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37cf85b8_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e4dfbb9_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58bb7abf_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a62503f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@516f52fb_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36e9f111_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b1429e4_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ea4ef45_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9846898_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ffe7c14_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1097eb05_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57d59976_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_slave_pipe</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_HCLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="881a20d8"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="99d23199"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="7763a6c0"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="ef43ee86"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="2c6ea533"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1658456774">
+  <File Type="PA-TCL" Name="risc_v_soc_test_wrapper.tcl"/>
+  <File Type="REPORTS-TCL" Name="risc_v_soc_test_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="risc_v_soc_test_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="risc_v_soc_test_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="risc_v_soc_test_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="risc_v_soc_test_wrapper.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/risc_v_soc_test/risc_v_soc_test.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/risc_v_soc_test/hdl/risc_v_soc_test_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/risc_v_soc_test/ip/risc_v_soc_test_risc_v_top_0_0/src/sort.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="risc_v_soc_test_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="risc_v_soc_test_AHB_M2S_cmtcnt_pipe_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="risc_v_soc_test_risc_v_top_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="risc_v_soc_test_AHB_Lite_gpio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="risc_v_soc_test_S0_AHB_Slave_pipe_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="risc_v_soc_test_My_Concat_4_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="risc_v_soc_test_AHB_Lite_SPI_LCD_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="risc_v_soc_test_My_Concat_4_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="risc_v_soc_test_AHB_Lite_IIC_0_0"/>
+</GenRun>

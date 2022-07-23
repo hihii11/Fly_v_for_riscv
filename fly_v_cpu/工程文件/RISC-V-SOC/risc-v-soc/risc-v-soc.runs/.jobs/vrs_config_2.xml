@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="risc_v_soc_test_AHB_M2S_cmtcnt_pipe_0_0_synth_1" LaunchDir="D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_M2S_cmtcnt_pipe_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="risc_v_soc_test_My_Concat_4_0_0_synth_1" LaunchDir="D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_My_Concat_4_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="risc_v_soc_test_My_Concat_4_0_1_synth_1" LaunchDir="D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_My_Concat_4_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="risc_v_soc_test_My_Concat_4_0_0_synth_1"/>
+	</Run>
+	<Run Id="risc_v_soc_test_AHB_Lite_IIC_0_0_synth_1" LaunchDir="D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_IIC_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="risc_v_soc_test_risc_v_top_0_0_synth_1" LaunchDir="D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_risc_v_top_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="risc_v_soc_test_AHB_Lite_SPI_LCD_0_0_synth_1" LaunchDir="D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="risc_v_soc_test_S0_AHB_Slave_pipe_0_0_synth_1" LaunchDir="D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_S0_AHB_Slave_pipe_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="risc_v_soc_test_AHB_Lite_gpio_0_0_synth_1" LaunchDir="D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="risc_v_soc_test_AHB_M2S_cmtcnt_pipe_0_0_synth_1"/>
+		<Parent Id="risc_v_soc_test_My_Concat_4_0_0_synth_1"/>
+		<Parent Id="risc_v_soc_test_My_Concat_4_0_1_synth_1"/>
+		<Parent Id="risc_v_soc_test_AHB_Lite_IIC_0_0_synth_1"/>
+		<Parent Id="risc_v_soc_test_risc_v_top_0_0_synth_1"/>
+		<Parent Id="risc_v_soc_test_AHB_Lite_SPI_LCD_0_0_synth_1"/>
+		<Parent Id="risc_v_soc_test_S0_AHB_Slave_pipe_0_0_synth_1"/>
+		<Parent Id="risc_v_soc_test_AHB_Lite_gpio_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

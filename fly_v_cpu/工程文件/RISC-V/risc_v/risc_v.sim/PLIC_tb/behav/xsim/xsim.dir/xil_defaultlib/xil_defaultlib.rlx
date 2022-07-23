@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.sim/PLIC_tb/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/CSR_DATA_CONFIG.v,1657951153,verilog,,,,,,,,,,,,
+D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/RISCV_INST_DEF.v,1657971175,verilog,,,,,,,,,,,,
+D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_alu.v,1658056533,verilog,,D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_csr_alu.v,D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/RISCV_INST_DEF.v,DIV;MUL;rv_alu,,,,,,,,
+D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_csr_alu.v,1657862407,verilog,,D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_ex.v,,rv_csr_alu,,,,,,,,
+D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_ex.v,1658068069,verilog,,,D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/RISCV_INST_DEF.v;D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/CSR_DATA_CONFIG.v,rv_ex,,,,,,,,

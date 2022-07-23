@@ -1,0 +1,46 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blk_mem_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/imports/src/AHB_Master_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AHB_Master_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/imports/src/FIFO.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO
+INFO: [VRFC 10-311] analyzing module RAM_for_fifo_LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/imports/src/M0_AHB_S2AHB_pipe.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module M0_AHB_S2AHB_pipe
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/cycle_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cycle_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_alu
+INFO: [VRFC 10-311] analyzing module MUL
+INFO: [VRFC 10-311] analyzing module DIV
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_csr_alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_csr_alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_csr_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_csr_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_irq_ctl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_irq_ctl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_mem
+INFO: [VRFC 10-311] analyzing module RAM_LUT
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_mio.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_mio
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_pc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_pc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_plic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_plic
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_timer64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_timer64
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/new/rv_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rv_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/sources_1/imports/new/synchronizer_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module synchronizer_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Vivado/project/CPU/RISC-V/risc_v/risc_v.srcs/if_id_sim/new/if_id_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module risc_v_tb

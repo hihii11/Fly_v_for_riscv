@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="rv_soc_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="rv_soc_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="612000001fs"></ZoomEndTime>
+      <Cursor1Time time="294000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="227"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/rv_soc_tb/AHB_gpio_tri_io" type="array">
+      <obj_property name="ElementShortName">AHB_gpio_tri_io[7:0]</obj_property>
+      <obj_property name="ObjectShortName">AHB_gpio_tri_io[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/REF_CLK" type="logic">
+      <obj_property name="ElementShortName">REF_CLK</obj_property>
+      <obj_property name="ObjectShortName">REF_CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/MIO" type="array">
+      <obj_property name="ElementShortName">MIO[7:0]</obj_property>
+      <obj_property name="ObjectShortName">MIO[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/SPI_CS" type="logic">
+      <obj_property name="ElementShortName">SPI_CS</obj_property>
+      <obj_property name="ObjectShortName">SPI_CS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/SPI_DC" type="logic">
+      <obj_property name="ElementShortName">SPI_DC</obj_property>
+      <obj_property name="ObjectShortName">SPI_DC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/SPI_RES" type="logic">
+      <obj_property name="ElementShortName">SPI_RES</obj_property>
+      <obj_property name="ObjectShortName">SPI_RES</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/SPI_SCL" type="logic">
+      <obj_property name="ElementShortName">SPI_SCL</obj_property>
+      <obj_property name="ObjectShortName">SPI_SCL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/SPI_SDA" type="logic">
+      <obj_property name="ElementShortName">SPI_SDA</obj_property>
+      <obj_property name="ObjectShortName">SPI_SDA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/bl" type="logic">
+      <obj_property name="ElementShortName">bl</obj_property>
+      <obj_property name="ObjectShortName">bl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/iic_scl" type="logic">
+      <obj_property name="ElementShortName">iic_scl</obj_property>
+      <obj_property name="ObjectShortName">iic_scl</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/iic_data_tri_io" type="logic">
+      <obj_property name="ElementShortName">iic_data_tri_io</obj_property>
+      <obj_property name="ObjectShortName">iic_data_tri_io</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/iic_qvld" type="logic">
+      <obj_property name="ElementShortName">iic_qvld</obj_property>
+      <obj_property name="ObjectShortName">iic_qvld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rv_soc_tb/nREST" type="logic">
+      <obj_property name="ElementShortName">nREST</obj_property>
+      <obj_property name="ObjectShortName">nREST</obj_property>
+   </wvobject>
+</wave_config>

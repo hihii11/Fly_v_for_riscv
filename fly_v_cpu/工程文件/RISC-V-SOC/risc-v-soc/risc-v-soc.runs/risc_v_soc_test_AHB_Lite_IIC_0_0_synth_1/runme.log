@@ -1,0 +1,426 @@
+
+*** Running vivado
+    with args -log risc_v_soc_test_AHB_Lite_IIC_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source risc_v_soc_test_AHB_Lite_IIC_0_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source risc_v_soc_test_AHB_Lite_IIC_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado/project/CPU/AMBA_ips'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado/project/CPU/rv-ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+Command: synth_design -top risc_v_soc_test_AHB_Lite_IIC_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10744 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 414.434 ; gain = 98.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'risc_v_soc_test_AHB_Lite_IIC_0_0' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ip/risc_v_soc_test_AHB_Lite_IIC_0_0/synth/risc_v_soc_test_AHB_Lite_IIC_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'AHB_Lite_IIC' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/AHB_Lite_IIC.v:1]
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'IIC_AHB_Lite_pipe_inist' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v:1]
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter ADDR_SHIFT bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v:129]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v:188]
+INFO: [Synth 8-6157] synthesizing module 'IIC_Master_2' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_Master_2.v:1]
+	Parameter IDLE0 bound to: 8'b00000000 
+	Parameter IDLE1 bound to: 8'b00000001 
+	Parameter START bound to: 8'b00000010 
+	Parameter SENDBYTE bound to: 8'b00000011 
+	Parameter SENDACK bound to: 8'b00000100 
+	Parameter SENDNACK bound to: 8'b00000101 
+	Parameter STOP bound to: 8'b00000110 
+	Parameter RECVBYTE bound to: 8'b00000111 
+	Parameter CHECKACK0 bound to: 8'b00001000 
+	Parameter CHECKACK1 bound to: 8'b00001001 
+	Parameter FINISH bound to: 8'b10000000 
+	Parameter error_time bound to: 250 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'IIC_Master_2' (1#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_Master_2.v:1]
+WARNING: [Synth 8-350] instance 'IIC_Master_inst' of module 'IIC_Master_2' requires 20 connections, but only 19 given [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v:201]
+WARNING: [Synth 8-6014] Unused sequential element s_hburst_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v:97]
+WARNING: [Synth 8-6014] Unused sequential element s_hsize_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v:98]
+WARNING: [Synth 8-6014] Unused sequential element s_hport_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v:99]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg3_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v:122]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'IIC_AHB_Lite_pipe_inist' (2#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v:1]
+WARNING: [Synth 8-350] instance 'IIC_AHB_Lite_pipe_S00_inist' of module 'IIC_AHB_Lite_pipe_inist' requires 22 connections, but only 21 given [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/AHB_Lite_IIC.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'AHB_Lite_IIC' (3#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/AHB_Lite_IIC.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'risc_v_soc_test_AHB_Lite_IIC_0_0' (4#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ip/risc_v_soc_test_AHB_Lite_IIC_0_0/synth/risc_v_soc_test_AHB_Lite_IIC_0_0.v:58]
+WARNING: [Synth 8-3331] design IIC_Master_2 has unconnected port iic_sda
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HBURST[2]
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HBURST[1]
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HBURST[0]
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HSIZE[2]
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HSIZE[1]
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HSIZE[0]
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HPORT[3]
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HPORT[2]
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HPORT[1]
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HPORT[0]
+WARNING: [Synth 8-3331] design IIC_AHB_Lite_pipe_inist has unconnected port S_HREAD_i
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 470.219 ; gain = 154.371
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 470.219 ; gain = 154.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 470.219 ; gain = 154.371
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 792.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 792.875 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.211 . Memory (MB): peak = 795.863 ; gain = 2.988
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 795.863 ; gain = 480.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 795.863 ; gain = 480.016
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 795.863 ; gain = 480.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "iic_IFG" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_sda_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_sda_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_ack" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_send_buff" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "iic_INT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_data_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'step_time' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_Master_2.v:51]
+WARNING: [Synth 8-327] inferring latch for variable 'clk_div0' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/1fc3/src/IIC_Master_2.v:50]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:45 . Memory (MB): peak = 795.863 ; gain = 480.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  12 Input      8 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 30    
+	  12 Input      1 Bit        Muxes := 15    
+	   9 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module IIC_Master_2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	  12 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	  12 Input      8 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 24    
+	  12 Input      1 Bit        Muxes := 15    
+	   9 Input      1 Bit        Muxes := 4     
+Module IIC_AHB_Lite_pipe_inist 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_state" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_sda_o" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_send_buff" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_sda_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_scl" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_IFG" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_ack" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_INT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3917] design risc_v_soc_test_AHB_Lite_IIC_0_0 has port s0_hresp[1] driven by constant 0
+INFO: [Synth 8-3917] design risc_v_soc_test_AHB_Lite_IIC_0_0 has port s0_hresp[0] driven by constant 0
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hburst[2]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hburst[1]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hburst[0]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hsize[2]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hsize[1]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hsize[0]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hport[3]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hport[2]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hport[1]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hport[0]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_IIC_0_0 has unconnected port s0_hready_i
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_IFG_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/IIC_AHB_Lite_pipe_S00_inist/slv_wr_en_reg )
+INFO: [Synth 8-3886] merging instance 'inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_state_reg[6]' (FDCE) to 'inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_state_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_state_reg[5]' (FDCE) to 'inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_state_reg[4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/IIC_AHB_Lite_pipe_S00_inist/IIC_Master_inst/iic_state_reg[4] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:55 . Memory (MB): peak = 795.863 ; gain = 480.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:01:20 . Memory (MB): peak = 798.465 ; gain = 482.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:01:20 . Memory (MB): peak = 798.984 ; gain = 483.137
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:21 . Memory (MB): peak = 825.203 ; gain = 509.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:25 . Memory (MB): peak = 825.203 ; gain = 509.355
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:25 . Memory (MB): peak = 825.203 ; gain = 509.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:25 . Memory (MB): peak = 825.203 ; gain = 509.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:25 . Memory (MB): peak = 825.203 ; gain = 509.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:25 . Memory (MB): peak = 825.203 ; gain = 509.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:25 . Memory (MB): peak = 825.203 ; gain = 509.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    24|
+|2     |LUT1   |     5|
+|3     |LUT2   |    45|
+|4     |LUT3   |    16|
+|5     |LUT4   |    36|
+|6     |LUT5   |    30|
+|7     |LUT6   |   160|
+|8     |FDCE   |    78|
+|9     |FDPE   |     3|
+|10    |FDRE   |   198|
+|11    |LD     |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------------------+------------------------+------+
+|      |Instance                        |Module                  |Cells |
++------+--------------------------------+------------------------+------+
+|1     |top                             |                        |   627|
+|2     |  inst                          |AHB_Lite_IIC            |   627|
+|3     |    IIC_AHB_Lite_pipe_S00_inist |IIC_AHB_Lite_pipe_inist |   627|
+|4     |      IIC_Master_inst           |IIC_Master_2            |   362|
++------+--------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:25 . Memory (MB): peak = 825.203 ; gain = 509.355
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:01:03 . Memory (MB): peak = 825.203 ; gain = 183.711
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 825.203 ; gain = 509.355
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 825.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LD => LDCE: 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:01:31 . Memory (MB): peak = 825.203 ; gain = 518.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 825.203 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_IIC_0_0_synth_1/risc_v_soc_test_AHB_Lite_IIC_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP risc_v_soc_test_AHB_Lite_IIC_0_0, cache-ID = ef759a15479e744f
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 825.203 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_IIC_0_0_synth_1/risc_v_soc_test_AHB_Lite_IIC_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file risc_v_soc_test_AHB_Lite_IIC_0_0_utilization_synth.rpt -pb risc_v_soc_test_AHB_Lite_IIC_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 21 23:57:58 2022...

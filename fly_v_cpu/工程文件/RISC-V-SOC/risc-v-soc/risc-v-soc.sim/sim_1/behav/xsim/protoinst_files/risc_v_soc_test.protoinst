@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"risc_v_soc_test": {
+			"proto_instances": {
+			}
+		}
+	}
+}

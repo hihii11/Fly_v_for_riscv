@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="risc_v_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="risc_v_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="484850000fs"></ZoomStartTime>
+      <ZoomEndTime time="545050001fs"></ZoomEndTime>
+      <Cursor1Time time="515000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="247"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="103" />
+   <wvobject fp_name="/risc_v_tb/REF_CLK" type="logic">
+      <obj_property name="ElementShortName">REF_CLK</obj_property>
+      <obj_property name="ObjectShortName">REF_CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/nRST" type="logic">
+      <obj_property name="ElementShortName">nRST</obj_property>
+      <obj_property name="ObjectShortName">nRST</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/PC_EN" type="logic">
+      <obj_property name="ElementShortName">PC_EN</obj_property>
+      <obj_property name="ObjectShortName">PC_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/WAIT_EN" type="logic">
+      <obj_property name="ElementShortName">WAIT_EN</obj_property>
+      <obj_property name="ObjectShortName">WAIT_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/WASH_EN" type="logic">
+      <obj_property name="ElementShortName">WASH_EN</obj_property>
+      <obj_property name="ObjectShortName">WASH_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2PC_LOAD" type="logic">
+      <obj_property name="ElementShortName">EX2PC_LOAD</obj_property>
+      <obj_property name="ObjectShortName">EX2PC_LOAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MRET_LOAD" type="logic">
+      <obj_property name="ElementShortName">MRET_LOAD</obj_property>
+      <obj_property name="ObjectShortName">MRET_LOAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/IRQ2PC_LOAD" type="logic">
+      <obj_property name="ElementShortName">IRQ2PC_LOAD</obj_property>
+      <obj_property name="ObjectShortName">IRQ2PC_LOAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/IRQ2PC_PC_ADDR" type="array">
+      <obj_property name="ElementShortName">IRQ2PC_PC_ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRQ2PC_PC_ADDR[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/PC_LOAD" type="logic">
+      <obj_property name="ElementShortName">PC_LOAD</obj_property>
+      <obj_property name="ObjectShortName">PC_LOAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/LD_ADDR" type="array">
+      <obj_property name="ElementShortName">LD_ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LD_ADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/PC_ADDR" type="array">
+      <obj_property name="ElementShortName">PC_ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_ADDR[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/IF2ID_ADDR" type="array">
+      <obj_property name="ElementShortName">IF2ID_ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IF2ID_ADDR[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/IF2ID_INS" type="array">
+      <obj_property name="ElementShortName">IF2ID_INS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IF2ID_INS[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_OP_CODE" type="array">
+      <obj_property name="ElementShortName">ID2EX_OP_CODE[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_OP_CODE[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_RD_ADDR" type="array">
+      <obj_property name="ElementShortName">ID2EX_RD_ADDR[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_RD_ADDR[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_OP_FUNC3" type="array">
+      <obj_property name="ElementShortName">ID2EX_OP_FUNC3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_OP_FUNC3[2:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_OP_FUNC7" type="array">
+      <obj_property name="ElementShortName">ID2EX_OP_FUNC7[6:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_OP_FUNC7[6:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_OP0_ADDR" type="array">
+      <obj_property name="ElementShortName">ID2EX_OP0_ADDR[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_OP0_ADDR[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_OP1_ADDR" type="array">
+      <obj_property name="ElementShortName">ID2EX_OP1_ADDR[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_OP1_ADDR[4:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_OP_IMM" type="array">
+      <obj_property name="ElementShortName">ID2EX_OP_IMM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_OP_IMM[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_REG_WR_EN" type="logic">
+      <obj_property name="ElementShortName">ID2EX_REG_WR_EN</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_REG_WR_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_REG_RD_EN" type="logic">
+      <obj_property name="ElementShortName">ID2EX_REG_RD_EN</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_REG_RD_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_MEM_WR_EN" type="logic">
+      <obj_property name="ElementShortName">ID2EX_MEM_WR_EN</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_MEM_WR_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_MEM_RD_EN" type="logic">
+      <obj_property name="ElementShortName">ID2EX_MEM_RD_EN</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_MEM_RD_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/ID2EX_CSR_ADDR" type="array">
+      <obj_property name="ElementShortName">ID2EX_CSR_ADDR[11:0]</obj_property>
+      <obj_property name="ObjectShortName">ID2EX_CSR_ADDR[11:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2MEM_OP_FUNC3" type="array">
+      <obj_property name="ElementShortName">EX2MEM_OP_FUNC3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_OP_FUNC3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2MEM_MEM_RD_EN" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_MEM_RD_EN</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_MEM_RD_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2MEM_MEM_WR_EN" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_MEM_WR_EN</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_MEM_WR_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2MEM_MEM_DATA" type="array">
+      <obj_property name="ElementShortName">EX2MEM_MEM_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_MEM_DATA[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2REG_REG_RD_EN" type="logic">
+      <obj_property name="ElementShortName">EX2REG_REG_RD_EN</obj_property>
+      <obj_property name="ObjectShortName">EX2REG_REG_RD_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2REG_OP0_ADDR" type="array">
+      <obj_property name="ElementShortName">EX2REG_OP0_ADDR[4:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2REG_OP0_ADDR[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/REG2EX_OP0_DATA" type="array">
+      <obj_property name="ElementShortName">REG2EX_OP0_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REG2EX_OP0_DATA[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2REG_OP1_ADDR" type="array">
+      <obj_property name="ElementShortName">EX2REG_OP1_ADDR[4:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2REG_OP1_ADDR[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/REG2EX_OP1_DATA" type="array">
+      <obj_property name="ElementShortName">REG2EX_OP1_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REG2EX_OP1_DATA[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2MEM_REG_WR_EN" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_REG_WR_EN</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_REG_WR_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2MEM_RD_ADDR" type="array">
+      <obj_property name="ElementShortName">EX2MEM_RD_ADDR[4:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_RD_ADDR[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX_OUT" type="array">
+      <obj_property name="ElementShortName">EX_OUT[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX_OUT[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2MEM_CSR_WR_EN" type="logic">
+      <obj_property name="ElementShortName">EX2MEM_CSR_WR_EN</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_CSR_WR_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2MEM_CSR_WR_ADDR" type="array">
+      <obj_property name="ElementShortName">EX2MEM_CSR_WR_ADDR[11:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_CSR_WR_ADDR[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2MEM_CSR_WR_DATA" type="array">
+      <obj_property name="ElementShortName">EX2MEM_CSR_WR_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2MEM_CSR_WR_DATA[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2CSR_CSR_RD_EN" type="logic">
+      <obj_property name="ElementShortName">EX2CSR_CSR_RD_EN</obj_property>
+      <obj_property name="ObjectShortName">EX2CSR_CSR_RD_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EX2CSR_CSR_RD_ADDR" type="array">
+      <obj_property name="ElementShortName">EX2CSR_CSR_RD_ADDR[11:0]</obj_property>
+      <obj_property name="ObjectShortName">EX2CSR_CSR_RD_ADDR[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2EX_CSR_RD_DATA" type="array">
+      <obj_property name="ElementShortName">CSR2EX_CSR_RD_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR2EX_CSR_RD_DATA[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MEM2WB_REG_WR_EN" type="logic">
+      <obj_property name="ElementShortName">MEM2WB_REG_WR_EN</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_REG_WR_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MEM2WB_RD_ADDR" type="array">
+      <obj_property name="ElementShortName">MEM2WB_RD_ADDR[4:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_RD_ADDR[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MEM2WB_RD_DATA" type="array">
+      <obj_property name="ElementShortName">MEM2WB_RD_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_RD_DATA[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MEM2WB_CSR_WR_EN" type="logic">
+      <obj_property name="ElementShortName">MEM2WB_CSR_WR_EN</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_CSR_WR_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MEM2WB_CSR_WR_ADDR" type="array">
+      <obj_property name="ElementShortName">MEM2WB_CSR_WR_ADDR[11:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_CSR_WR_ADDR[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MEM2WB_CSR_WR_DATA" type="array">
+      <obj_property name="ElementShortName">MEM2WB_CSR_WR_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MEM2WB_CSR_WR_DATA[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/WB2CSR_CSR_WR_EN" type="logic">
+      <obj_property name="ElementShortName">WB2CSR_CSR_WR_EN</obj_property>
+      <obj_property name="ObjectShortName">WB2CSR_CSR_WR_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/WB2CSR_CSR_WR_ADDR" type="array">
+      <obj_property name="ElementShortName">WB2CSR_CSR_WR_ADDR[11:0]</obj_property>
+      <obj_property name="ObjectShortName">WB2CSR_CSR_WR_ADDR[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/WB2CSR_CSR_WR_DATA" type="array">
+      <obj_property name="ElementShortName">WB2CSR_CSR_WR_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WB2CSR_CSR_WR_DATA[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/WB2REG_REG_WR_EN" type="logic">
+      <obj_property name="ElementShortName">WB2REG_REG_WR_EN</obj_property>
+      <obj_property name="ObjectShortName">WB2REG_REG_WR_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/WB2REG_RD_ADDR" type="array">
+      <obj_property name="ElementShortName">WB2REG_RD_ADDR[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WB2REG_RD_ADDR[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/WB2REG_RD_DATA" type="array">
+      <obj_property name="ElementShortName">WB2REG_RD_DATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WB2REG_RD_DATA[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2IRQ_MSTATUS_LOAD" type="logic">
+      <obj_property name="ElementShortName">CSR2IRQ_MSTATUS_LOAD</obj_property>
+      <obj_property name="ObjectShortName">CSR2IRQ_MSTATUS_LOAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2IRQ_MSTATUS" type="array">
+      <obj_property name="ElementShortName">CSR2IRQ_MSTATUS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR2IRQ_MSTATUS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/IRQ2CSR_MSTATUS" type="array">
+      <obj_property name="ElementShortName">IRQ2CSR_MSTATUS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRQ2CSR_MSTATUS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2PLIC_IE" type="array">
+      <obj_property name="ElementShortName">CSR2PLIC_IE[10:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR2PLIC_IE[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2IRQ_MIE" type="array">
+      <obj_property name="ElementShortName">CSR2IRQ_MIE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR2IRQ_MIE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2IRQ_MTVEC" type="array">
+      <obj_property name="ElementShortName">CSR2IRQ_MTVEC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR2IRQ_MTVEC[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2IRQ_MEPC" type="array">
+      <obj_property name="ElementShortName">CSR2IRQ_MEPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR2IRQ_MEPC[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/IRQ2CSR_MEPC" type="array">
+      <obj_property name="ElementShortName">IRQ2CSR_MEPC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRQ2CSR_MEPC[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/IRQ2CSR_MCAUSE" type="array">
+      <obj_property name="ElementShortName">IRQ2CSR_MCAUSE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">IRQ2CSR_MCAUSE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2PLIC_PRITHRE" type="array">
+      <obj_property name="ElementShortName">CSR2PLIC_PRITHRE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR2PLIC_PRITHRE[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2PLIC_IRQ_INDEX" type="array">
+      <obj_property name="ElementShortName">CSR2PLIC_IRQ_INDEX[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR2PLIC_IRQ_INDEX[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2PLIC_PRI" type="array">
+      <obj_property name="ElementShortName">CSR2PLIC_PRI[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR2PLIC_PRI[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2PLIC_PRI_LOAD" type="logic">
+      <obj_property name="ElementShortName">CSR2PLIC_PRI_LOAD</obj_property>
+      <obj_property name="ObjectShortName">CSR2PLIC_PRI_LOAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2PLIC_MTVEC_LOAD" type="logic">
+      <obj_property name="ElementShortName">CSR2PLIC_MTVEC_LOAD</obj_property>
+      <obj_property name="ObjectShortName">CSR2PLIC_MTVEC_LOAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2PLIC_MODE" type="array">
+      <obj_property name="ElementShortName">CSR2PLIC_MODE[1:0]</obj_property>
+      <obj_property name="ObjectShortName">CSR2PLIC_MODE[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/CSR2PLIC_MODE_LOAD" type="logic">
+      <obj_property name="ElementShortName">CSR2PLIC_MODE_LOAD</obj_property>
+      <obj_property name="ObjectShortName">CSR2PLIC_MODE_LOAD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/EXT_IRQ" type="array">
+      <obj_property name="ElementShortName">EXT_IRQ[2:0]</obj_property>
+      <obj_property name="ObjectShortName">EXT_IRQ[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/T_IRQ" type="logic">
+      <obj_property name="ElementShortName">T_IRQ</obj_property>
+      <obj_property name="ObjectShortName">T_IRQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MIO_T" type="array">
+      <obj_property name="ElementShortName">MIO_T[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MIO_T[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MIO_O" type="array">
+      <obj_property name="ElementShortName">MIO_O[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MIO_O[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MIO_I" type="array">
+      <obj_property name="ElementShortName">MIO_I[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MIO_I[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/AR_SEND" type="array">
+      <obj_property name="ElementShortName">AR_SEND[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AR_SEND[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/DATA_SEND" type="array">
+      <obj_property name="ElementShortName">DATA_SEND[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_SEND[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/AHB_START" type="logic">
+      <obj_property name="ElementShortName">AHB_START</obj_property>
+      <obj_property name="ObjectShortName">AHB_START</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/RECV_FIFO_EMPTY" type="logic">
+      <obj_property name="ElementShortName">RECV_FIFO_EMPTY</obj_property>
+      <obj_property name="ObjectShortName">RECV_FIFO_EMPTY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/RECV_FIFO_FULL" type="logic">
+      <obj_property name="ElementShortName">RECV_FIFO_FULL</obj_property>
+      <obj_property name="ObjectShortName">RECV_FIFO_FULL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/FIFO_EMPTY" type="logic">
+      <obj_property name="ElementShortName">FIFO_EMPTY</obj_property>
+      <obj_property name="ObjectShortName">FIFO_EMPTY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/FIFO_FULL" type="logic">
+      <obj_property name="ElementShortName">FIFO_FULL</obj_property>
+      <obj_property name="ObjectShortName">FIFO_FULL</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/RECV_RD" type="logic">
+      <obj_property name="ElementShortName">RECV_RD</obj_property>
+      <obj_property name="ObjectShortName">RECV_RD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/TRAN_TYPE" type="logic">
+      <obj_property name="ElementShortName">TRAN_TYPE</obj_property>
+      <obj_property name="ObjectShortName">TRAN_TYPE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/TRAN_STATUS" type="array">
+      <obj_property name="ElementShortName">TRAN_STATUS[1:0]</obj_property>
+      <obj_property name="ObjectShortName">TRAN_STATUS[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/BURST_TYPE" type="array">
+      <obj_property name="ElementShortName">BURST_TYPE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">BURST_TYPE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/DATA_RECV" type="array">
+      <obj_property name="ElementShortName">DATA_RECV[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DATA_RECV[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/M0_HADDR" type="array">
+      <obj_property name="ElementShortName">M0_HADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M0_HADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/M0_HWRITE" type="logic">
+      <obj_property name="ElementShortName">M0_HWRITE</obj_property>
+      <obj_property name="ObjectShortName">M0_HWRITE</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/M0_HTRANS" type="array">
+      <obj_property name="ElementShortName">M0_HTRANS[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M0_HTRANS[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/M0_HBURST" type="array">
+      <obj_property name="ElementShortName">M0_HBURST[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M0_HBURST[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/M0_HSIZE" type="array">
+      <obj_property name="ElementShortName">M0_HSIZE[2:0]</obj_property>
+      <obj_property name="ObjectShortName">M0_HSIZE[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/M0_HPORT" type="array">
+      <obj_property name="ElementShortName">M0_HPORT[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M0_HPORT[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/S_HRESP" type="array">
+      <obj_property name="ElementShortName">S_HRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_HRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/S_HREAD_o" type="logic">
+      <obj_property name="ElementShortName">S_HREAD_o</obj_property>
+      <obj_property name="ObjectShortName">S_HREAD_o</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/M0_HWDATA" type="array">
+      <obj_property name="ElementShortName">M0_HWDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M0_HWDATA[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/M0_HRDATA" type="array">
+      <obj_property name="ElementShortName">M0_HRDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M0_HRDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/PC_START_ADDRESS" type="array">
+      <obj_property name="ElementShortName">PC_START_ADDRESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_START_ADDRESS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/PC_END_ADDRESS" type="array">
+      <obj_property name="ElementShortName">PC_END_ADDRESS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC_END_ADDRESS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/PLIC_IRQ_NUM" type="array">
+      <obj_property name="ElementShortName">PLIC_IRQ_NUM[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PLIC_IRQ_NUM[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/risc_v_tb/MIO" type="array">
+      <obj_property name="ElementShortName">MIO[31:0]</obj_property>
+      <obj_property name="ObjectShortName">MIO[31:0]</obj_property>
+   </wvobject>
+</wave_config>

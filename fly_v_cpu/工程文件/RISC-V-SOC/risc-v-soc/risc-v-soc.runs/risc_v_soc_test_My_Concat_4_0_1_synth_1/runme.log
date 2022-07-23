@@ -1,0 +1,17 @@
+
+*** Running vivado
+    with args -log risc_v_soc_test_My_Concat_4_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source risc_v_soc_test_My_Concat_4_0_1.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source risc_v_soc_test_My_Concat_4_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado/project/CPU/AMBA_ips'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado/project/CPU/rv-ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP risc_v_soc_test_My_Concat_4_0_1, cache-ID = 124a3f82115fca03.
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 21 23:58:06 2022...

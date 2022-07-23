@@ -1,0 +1,554 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Jul 21 23:56:13 2022
+# Process ID: 1432
+# Current directory: D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0_synth_1
+# Command line: vivado.exe -log risc_v_soc_test_AHB_Lite_SPI_LCD_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source risc_v_soc_test_AHB_Lite_SPI_LCD_0_0.tcl
+# Log file: D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0_synth_1/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0.vds
+# Journal file: D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source risc_v_soc_test_AHB_Lite_SPI_LCD_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado/project/CPU/AMBA_ips'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Vivado/project/CPU/rv-ips'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+Command: synth_design -top risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18384 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 414.297 ; gain = 99.016
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'risc_v_soc_test_AHB_Lite_SPI_LCD_0_0' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ip/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0/synth/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'AHB_Lite_SPI_LCD' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/AHB_Lite_SPI_LCD.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_DEPTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SPI_AHB_Slave_pipe_S0_inist' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_DEPTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter C_S_AHB_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AHB_ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter BUSY bound to: 2'b01 
+	Parameter NONSEQ bound to: 2'b10 
+	Parameter SEQ bound to: 2'b11 
+	Parameter SINGLE bound to: 3'b000 
+	Parameter INCR bound to: 3'b001 
+	Parameter ADDR_SHIFT bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:156]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:221]
+INFO: [Synth 8-6157] synthesizing module 'SPI_LCD' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_LCD.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_DEPTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_LCD.v:99]
+INFO: [Synth 8-6157] synthesizing module 'FIFO' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:1]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter DATA_DEPTH bound to: 64 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'RAM_LUT' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:103]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 5 - type: integer 
+	Parameter DATA_DEPTH bound to: 64 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[63] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[62] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[61] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[60] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[59] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[58] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[57] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[56] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[55] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[54] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[53] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[52] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[51] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[50] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[49] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[48] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[47] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[46] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[45] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[44] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[43] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[42] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[41] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[40] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[39] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[38] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[37] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[36] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[35] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[34] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[33] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+WARNING: [Synth 8-6014] Unused sequential element ram_reg[32] was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:128]
+INFO: [Synth 8-6155] done synthesizing module 'RAM_LUT' (1#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:103]
+INFO: [Synth 8-6155] done synthesizing module 'FIFO' (2#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/FIFO.v:1]
+WARNING: [Synth 8-350] instance 'FIFO_inist0' of module 'FIFO' requires 15 connections, but only 11 given [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_LCD.v:143]
+INFO: [Synth 8-6157] synthesizing module 'SPI_write' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_write.v:1]
+	Parameter IDLE0 bound to: 6'b000000 
+	Parameter IDLE1 bound to: 6'b000001 
+	Parameter SEND bound to: 6'b000010 
+	Parameter FINISH bound to: 6'b000011 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_write.v:60]
+WARNING: [Synth 8-5788] Register spi_dc_reg in module SPI_write is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_write.v:66]
+WARNING: [Synth 8-5788] Register spi_interval_cnt_reg in module SPI_write is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_write.v:71]
+WARNING: [Synth 8-5788] Register data_width_reg in module SPI_write is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_write.v:92]
+WARNING: [Synth 8-5788] Register data_send_buff_reg in module SPI_write is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_write.v:93]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_write' (3#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_write.v:1]
+WARNING: [Synth 8-689] width (4) of port connection 'data_qvld' does not match port width (1) of module 'SPI_write' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_LCD.v:170]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_LCD' (4#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_LCD.v:1]
+WARNING: [Synth 8-689] width (32) of port connection 'CLK_DIV' does not match port width (16) of module 'SPI_LCD' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:249]
+WARNING: [Synth 8-689] width (32) of port connection 'SPI_STEP' does not match port width (16) of module 'SPI_LCD' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:250]
+WARNING: [Synth 8-689] width (32) of port connection 'SPI_INTERVAL' does not match port width (16) of module 'SPI_LCD' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:251]
+WARNING: [Synth 8-350] instance 'SPI_LCD_inist0' of module 'SPI_LCD' requires 23 connections, but only 20 given [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:240]
+WARNING: [Synth 8-6014] Unused sequential element s_hburst_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:107]
+WARNING: [Synth 8-6014] Unused sequential element s_hsize_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:108]
+WARNING: [Synth 8-6014] Unused sequential element s_hport_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:109]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg4_reg was removed.  [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:147]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_AHB_Slave_pipe_S0_inist' (5#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_AHB_Lite_pipe_inist.v:1]
+WARNING: [Synth 8-350] instance 'SPI_AHB_Slave_pipe_S00_inist' of module 'SPI_AHB_Slave_pipe_S0_inist' requires 23 connections, but only 22 given [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/AHB_Lite_SPI_LCD.v:46]
+INFO: [Synth 8-6155] done synthesizing module 'AHB_Lite_SPI_LCD' (6#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/AHB_Lite_SPI_LCD.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'risc_v_soc_test_AHB_Lite_SPI_LCD_0_0' (7#1) [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ip/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0/synth/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0.v:58]
+WARNING: [Synth 8-3331] design SPI_write has unconnected port spi_data[31]
+WARNING: [Synth 8-3331] design SPI_write has unconnected port spi_data[30]
+WARNING: [Synth 8-3331] design SPI_write has unconnected port spi_data[29]
+WARNING: [Synth 8-3331] design SPI_write has unconnected port spi_data[28]
+WARNING: [Synth 8-3331] design SPI_write has unconnected port spi_data[27]
+WARNING: [Synth 8-3331] design SPI_write has unconnected port spi_data[26]
+WARNING: [Synth 8-3331] design SPI_write has unconnected port spi_data[25]
+WARNING: [Synth 8-3331] design SPI_write has unconnected port spi_data[24]
+WARNING: [Synth 8-3331] design SPI_write has unconnected port spi_data[23]
+WARNING: [Synth 8-3331] design SPI_write has unconnected port spi_data[22]
+WARNING: [Synth 8-3331] design SPI_AHB_Slave_pipe_S0_inist has unconnected port S_HSIZE[2]
+WARNING: [Synth 8-3331] design SPI_AHB_Slave_pipe_S0_inist has unconnected port S_HSIZE[1]
+WARNING: [Synth 8-3331] design SPI_AHB_Slave_pipe_S0_inist has unconnected port S_HSIZE[0]
+WARNING: [Synth 8-3331] design SPI_AHB_Slave_pipe_S0_inist has unconnected port S_HPORT[3]
+WARNING: [Synth 8-3331] design SPI_AHB_Slave_pipe_S0_inist has unconnected port S_HPORT[2]
+WARNING: [Synth 8-3331] design SPI_AHB_Slave_pipe_S0_inist has unconnected port S_HPORT[1]
+WARNING: [Synth 8-3331] design SPI_AHB_Slave_pipe_S0_inist has unconnected port S_HPORT[0]
+WARNING: [Synth 8-3331] design SPI_AHB_Slave_pipe_S0_inist has unconnected port S_HREAD_i
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 470.566 ; gain = 155.285
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 470.566 ; gain = 155.285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 470.566 ; gain = 155.285
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 796.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 796.527 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.178 . Memory (MB): peak = 798.543 ; gain = 2.016
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 798.543 ; gain = 483.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 798.543 ; gain = 483.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:43 . Memory (MB): peak = 798.543 ; gain = 483.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ram_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ram_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'spi_state_reg' in module 'SPI_write'
+INFO: [Synth 8-5546] ROM "spi_sda" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spi_res" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "spi_busy" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "INT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "spi_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "spi_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_qvld" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "slv_reg0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg5" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg6" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "slv_reg7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "s_data_out" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   IDLE0 |                             0001 |                           000000
+                   IDLE1 |                             0010 |                           000001
+                    SEND |                             0100 |                           000010
+                  FINISH |                             1000 |                           000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'spi_state_reg' using encoding 'one-hot' in module 'SPI_write'
+WARNING: [Synth 8-327] inferring latch for variable 'clk_div' [d:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.srcs/sources_1/bd/risc_v_soc_test/ipshared/4980/src/SPI_LCD.v:49]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:45 . Memory (MB): peak = 798.543 ; gain = 483.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 41    
+	               16 Bit    Registers := 3     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 53    
+	   3 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 15    
+	   5 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module RAM_LUT 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 33    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module FIFO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 2     
++---Registers : 
+	                6 Bit    Registers := 2     
+Module SPI_write 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   4 Input     16 Bit        Muxes := 3     
+	   4 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 13    
+Module SPI_LCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+Module SPI_AHB_Slave_pipe_S0_inist 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
+	                5 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   8 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/SPI_write_inist0/spi_sda" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3917] design risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 has port s0_hresp[1] driven by constant 0
+INFO: [Synth 8-3917] design risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 has port s0_hresp[0] driven by constant 0
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 has unconnected port s0_hsize[2]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 has unconnected port s0_hsize[1]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 has unconnected port s0_hsize[0]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 has unconnected port s0_hport[3]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 has unconnected port s0_hport[2]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 has unconnected port s0_hport[1]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 has unconnected port s0_hport[0]
+WARNING: [Synth 8-3331] design risc_v_soc_test_AHB_Lite_SPI_LCD_0_0 has unconnected port s0_hready_i
+INFO: [Synth 8-3886] merging instance 'inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/data_qvld_reg[1]' (FDCE) to 'inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/data_qvld_reg[2]' (FDCE) to 'inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/data_qvld_reg[3]' (FDCE) to 'inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/state_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/state_reg[3]' (FDCE) to 'inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/state_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/SPI_AHB_Slave_pipe_S00_inist/slv_wr_en_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\inst/SPI_AHB_Slave_pipe_S00_inist/SPI_LCD_inist0/SPI_write_inist0/bl_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:57 . Memory (MB): peak = 798.543 ; gain = 483.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:22 . Memory (MB): peak = 800.832 ; gain = 485.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:23 . Memory (MB): peak = 801.875 ; gain = 486.594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:47 ; elapsed = 00:01:24 . Memory (MB): peak = 823.988 ; gain = 508.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:29 . Memory (MB): peak = 823.988 ; gain = 508.707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:29 . Memory (MB): peak = 823.988 ; gain = 508.707
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:50 ; elapsed = 00:01:29 . Memory (MB): peak = 823.988 ; gain = 508.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:50 ; elapsed = 00:01:29 . Memory (MB): peak = 823.988 ; gain = 508.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:29 . Memory (MB): peak = 823.988 ; gain = 508.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:29 . Memory (MB): peak = 823.988 ; gain = 508.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    27|
+|2     |LUT1   |    21|
+|3     |LUT2   |    30|
+|4     |LUT3   |    34|
+|5     |LUT4   |    34|
+|6     |LUT5   |    56|
+|7     |LUT6   |   302|
+|8     |MUXF7  |   118|
+|9     |FDCE   |   787|
+|10    |FDPE   |     1|
+|11    |FDRE   |   300|
+|12    |LD     |    16|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------------+----------------------------+------+
+|      |Instance                         |Module                      |Cells |
++------+---------------------------------+----------------------------+------+
+|1     |top                              |                            |  1726|
+|2     |  inst                           |AHB_Lite_SPI_LCD            |  1726|
+|3     |    SPI_AHB_Slave_pipe_S00_inist |SPI_AHB_Slave_pipe_S0_inist |  1726|
+|4     |      SPI_LCD_inist0             |SPI_LCD                     |  1356|
+|5     |        FIFO_inist0              |FIFO                        |  1078|
+|6     |          RAM_LUT_inist0         |RAM_LUT                     |  1049|
+|7     |        SPI_write_inist0         |SPI_write                   |   186|
++------+---------------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:29 . Memory (MB): peak = 823.988 ; gain = 508.707
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:01:07 . Memory (MB): peak = 823.988 ; gain = 180.730
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:30 . Memory (MB): peak = 823.988 ; gain = 508.707
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 161 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 823.988 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  LD => LDCE: 16 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+92 Infos, 75 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:34 . Memory (MB): peak = 823.988 ; gain = 517.730
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 823.988 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0_synth_1/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP risc_v_soc_test_AHB_Lite_SPI_LCD_0_0, cache-ID = b4e716a48027fde2
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 823.988 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado/project/CPU/RISC-V-SOC/risc-v-soc/risc-v-soc.runs/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0_synth_1/risc_v_soc_test_AHB_Lite_SPI_LCD_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file risc_v_soc_test_AHB_Lite_SPI_LCD_0_0_utilization_synth.rpt -pb risc_v_soc_test_AHB_Lite_SPI_LCD_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 21 23:58:03 2022...

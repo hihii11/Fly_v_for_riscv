@@ -1,0 +1,400 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9594783AE7B7FA16",
+      "device": "xc7z010clg400-1",
+      "name": "risc_v_soc_test",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "AHB_Lite_gpio_0": "",
+      "AHB_Lite_IIC_0": "",
+      "AHB_Lite_SPI_LCD_0": "",
+      "AHB_M2S_cmtcnt_pipe_0": "",
+      "S0_AHB_Slave_pipe_0": "",
+      "My_Concat_4_0": "",
+      "My_Concat_4_1": "",
+      "xlconcat_0": "",
+      "xlconcat_1": "",
+      "fly_v_top_0": ""
+    },
+    "interface_ports": {
+      "AHB_gpio": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
+      },
+      "iic_data": {
+        "mode": "Master",
+        "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
+      }
+    },
+    "ports": {
+      "REF_CLK": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "nREST",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "risc_v_soc_test_REF_CLK",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "iic_scl": {
+        "direction": "O"
+      },
+      "iic_qvld": {
+        "direction": "O"
+      },
+      "SPI_SCL": {
+        "direction": "O"
+      },
+      "SPI_SDA": {
+        "direction": "O"
+      },
+      "SPI_DC": {
+        "direction": "O"
+      },
+      "SPI_RES": {
+        "direction": "O"
+      },
+      "SPI_CS": {
+        "direction": "O"
+      },
+      "bl": {
+        "direction": "O"
+      },
+      "MIO": {
+        "direction": "IO",
+        "left": "7",
+        "right": "0"
+      },
+      "nREST": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "AHB_Lite_gpio_0": {
+        "vlnv": "xilinx.com:user:AHB_Lite_gpio:1.0",
+        "xci_name": "risc_v_soc_test_AHB_Lite_gpio_0_0"
+      },
+      "AHB_Lite_IIC_0": {
+        "vlnv": "xilinx.com:user:AHB_Lite_IIC:1.0",
+        "xci_name": "risc_v_soc_test_AHB_Lite_IIC_0_0"
+      },
+      "AHB_Lite_SPI_LCD_0": {
+        "vlnv": "xilinx.com:user:AHB_Lite_SPI_LCD:1.0",
+        "xci_name": "risc_v_soc_test_AHB_Lite_SPI_LCD_0_0"
+      },
+      "AHB_M2S_cmtcnt_pipe_0": {
+        "vlnv": "xilinx.com:user:AHB_M2S_cmtcnt_pipe:1.0",
+        "xci_name": "risc_v_soc_test_AHB_M2S_cmtcnt_pipe_0_0"
+      },
+      "S0_AHB_Slave_pipe_0": {
+        "vlnv": "xilinx.com:user:S0_AHB_Slave_pipe:1.0",
+        "xci_name": "risc_v_soc_test_S0_AHB_Slave_pipe_0_0"
+      },
+      "My_Concat_4_0": {
+        "vlnv": "xilinx.com:user:My_Concat_4:1.0",
+        "xci_name": "risc_v_soc_test_My_Concat_4_0_0"
+      },
+      "My_Concat_4_1": {
+        "vlnv": "xilinx.com:user:My_Concat_4:1.0",
+        "xci_name": "risc_v_soc_test_My_Concat_4_0_1"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "risc_v_soc_test_xlconcat_0_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconcat_1": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "risc_v_soc_test_xlconcat_1_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "3"
+          }
+        }
+      },
+      "fly_v_top_0": {
+        "vlnv": "xilinx.com:user:fly_v_top:1.0",
+        "xci_name": "risc_v_soc_test_fly_v_top_0_0",
+        "parameters": {
+          "MIO_WIDTH": {
+            "value": "8"
+          },
+          "USER_EXT_IRQ_NUM": {
+            "value": "3"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "AHB_M2S_cmtcnt_pipe_0_M00_AHB": {
+        "interface_ports": [
+          "AHB_Lite_SPI_LCD_0/S0_AHB",
+          "AHB_M2S_cmtcnt_pipe_0/M00_AHB"
+        ]
+      },
+      "fly_v_top_0_M00_AHB": {
+        "interface_ports": [
+          "fly_v_top_0/M00_AHB",
+          "AHB_M2S_cmtcnt_pipe_0/S00_AHB"
+        ]
+      },
+      "AHB_Lite_gpio_0_gpio": {
+        "interface_ports": [
+          "AHB_gpio",
+          "AHB_Lite_gpio_0/gpio"
+        ]
+      },
+      "AHB_M2S_cmtcnt_pipe_0_M02_AHB": {
+        "interface_ports": [
+          "AHB_Lite_gpio_0/S0_AHB",
+          "AHB_M2S_cmtcnt_pipe_0/M02_AHB"
+        ]
+      },
+      "AHB_Lite_IIC_0_iic_data": {
+        "interface_ports": [
+          "iic_data",
+          "AHB_Lite_IIC_0/iic_data"
+        ]
+      },
+      "AHB_M2S_cmtcnt_pipe_0_M01_AHB": {
+        "interface_ports": [
+          "AHB_Lite_IIC_0/S0_AHB",
+          "AHB_M2S_cmtcnt_pipe_0/M01_AHB"
+        ]
+      },
+      "AHB_M2S_cmtcnt_pipe_0_M03_AHB": {
+        "interface_ports": [
+          "S0_AHB_Slave_pipe_0/S0_AHB",
+          "AHB_M2S_cmtcnt_pipe_0/M03_AHB"
+        ]
+      }
+    },
+    "nets": {
+      "REF_CLK_1": {
+        "ports": [
+          "REF_CLK",
+          "AHB_M2S_cmtcnt_pipe_0/HCLK",
+          "AHB_Lite_SPI_LCD_0/s0_HCLK",
+          "S0_AHB_Slave_pipe_0/s0_HCLK",
+          "AHB_Lite_IIC_0/clk",
+          "AHB_Lite_IIC_0/s0_HCLK",
+          "AHB_Lite_gpio_0/gpio_clk",
+          "AHB_Lite_gpio_0/s0_HCLK",
+          "AHB_Lite_SPI_LCD_0/SPI_LCD_CLK",
+          "fly_v_top_0/REF_CLK",
+          "fly_v_top_0/M00_AHB_CLK"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "nREST",
+          "AHB_Lite_SPI_LCD_0/s0_nREST",
+          "AHB_M2S_cmtcnt_pipe_0/H_nREST",
+          "S0_AHB_Slave_pipe_0/s0_nREST",
+          "AHB_Lite_gpio_0/s0_nREST",
+          "AHB_Lite_IIC_0/s0_nREST",
+          "fly_v_top_0/nRST"
+        ]
+      },
+      "AHB_M2S_cmtcnt_pipe_0_s_hsel": {
+        "ports": [
+          "AHB_M2S_cmtcnt_pipe_0/s_hsel",
+          "My_Concat_4_1/din"
+        ]
+      },
+      "My_Concat_4_0_OUT0": {
+        "ports": [
+          "My_Concat_4_0/OUT0",
+          "AHB_Lite_SPI_LCD_0/s0_hready_i"
+        ]
+      },
+      "My_Concat_4_1_OUT0": {
+        "ports": [
+          "My_Concat_4_1/OUT0",
+          "AHB_Lite_SPI_LCD_0/s0_hsel"
+        ]
+      },
+      "AHB_Lite_SPI_LCD_0_s0_hready_o": {
+        "ports": [
+          "AHB_Lite_SPI_LCD_0/s0_hready_o",
+          "xlconcat_0/In0"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "AHB_M2S_cmtcnt_pipe_0/s_hready_i"
+        ]
+      },
+      "AHB_Lite_IIC_0_s0_hready_o": {
+        "ports": [
+          "AHB_Lite_IIC_0/s0_hready_o",
+          "xlconcat_0/In1"
+        ]
+      },
+      "My_Concat_4_1_OUT1": {
+        "ports": [
+          "My_Concat_4_1/OUT1",
+          "AHB_Lite_IIC_0/s0_hsel"
+        ]
+      },
+      "My_Concat_4_0_OUT1": {
+        "ports": [
+          "My_Concat_4_0/OUT1",
+          "AHB_Lite_IIC_0/s0_hready_i"
+        ]
+      },
+      "My_Concat_4_1_OUT2": {
+        "ports": [
+          "My_Concat_4_1/OUT2",
+          "AHB_Lite_gpio_0/s0_hsel"
+        ]
+      },
+      "My_Concat_4_0_OUT2": {
+        "ports": [
+          "My_Concat_4_0/OUT2",
+          "AHB_Lite_gpio_0/s0_hready_i"
+        ]
+      },
+      "AHB_Lite_gpio_0_s0_hready_o": {
+        "ports": [
+          "AHB_Lite_gpio_0/s0_hready_o",
+          "xlconcat_0/In2"
+        ]
+      },
+      "S0_AHB_Slave_pipe_0_s0_hready_o": {
+        "ports": [
+          "S0_AHB_Slave_pipe_0/s0_hready_o",
+          "xlconcat_0/In3"
+        ]
+      },
+      "My_Concat_4_0_OUT3": {
+        "ports": [
+          "My_Concat_4_0/OUT3",
+          "S0_AHB_Slave_pipe_0/s0_hready_i"
+        ]
+      },
+      "My_Concat_4_1_OUT3": {
+        "ports": [
+          "My_Concat_4_1/OUT3",
+          "S0_AHB_Slave_pipe_0/s0_hsel"
+        ]
+      },
+      "AHB_M2S_cmtcnt_pipe_0_s_hready_o": {
+        "ports": [
+          "AHB_M2S_cmtcnt_pipe_0/s_hready_o",
+          "My_Concat_4_0/din"
+        ]
+      },
+      "AHB_M2S_cmtcnt_pipe_0_s00_hready_o": {
+        "ports": [
+          "AHB_M2S_cmtcnt_pipe_0/s00_hready_o",
+          "fly_v_top_0/S_HREAD_o"
+        ]
+      },
+      "AHB_Lite_IIC_0_iic_scl": {
+        "ports": [
+          "AHB_Lite_IIC_0/iic_scl",
+          "iic_scl"
+        ]
+      },
+      "AHB_Lite_IIC_0_iic_qvld": {
+        "ports": [
+          "AHB_Lite_IIC_0/iic_qvld",
+          "iic_qvld"
+        ]
+      },
+      "AHB_Lite_SPI_LCD_0_SPI_SCL": {
+        "ports": [
+          "AHB_Lite_SPI_LCD_0/SPI_SCL",
+          "SPI_SCL"
+        ]
+      },
+      "AHB_Lite_SPI_LCD_0_SPI_SDA": {
+        "ports": [
+          "AHB_Lite_SPI_LCD_0/SPI_SDA",
+          "SPI_SDA"
+        ]
+      },
+      "AHB_Lite_SPI_LCD_0_SPI_DC": {
+        "ports": [
+          "AHB_Lite_SPI_LCD_0/SPI_DC",
+          "SPI_DC"
+        ]
+      },
+      "AHB_Lite_SPI_LCD_0_SPI_RES": {
+        "ports": [
+          "AHB_Lite_SPI_LCD_0/SPI_RES",
+          "SPI_RES"
+        ]
+      },
+      "AHB_Lite_SPI_LCD_0_SPI_CS": {
+        "ports": [
+          "AHB_Lite_SPI_LCD_0/SPI_CS",
+          "SPI_CS"
+        ]
+      },
+      "AHB_Lite_SPI_LCD_0_bl": {
+        "ports": [
+          "AHB_Lite_SPI_LCD_0/bl",
+          "bl"
+        ]
+      },
+      "AHB_Lite_IIC_0_iic_INT": {
+        "ports": [
+          "AHB_Lite_IIC_0/iic_INT",
+          "xlconcat_1/In0"
+        ]
+      },
+      "AHB_Lite_SPI_LCD_0_spi_INT": {
+        "ports": [
+          "AHB_Lite_SPI_LCD_0/spi_INT",
+          "xlconcat_1/In1"
+        ]
+      },
+      "AHB_Lite_gpio_0_GPIO_INT": {
+        "ports": [
+          "AHB_Lite_gpio_0/GPIO_INT",
+          "xlconcat_1/In2"
+        ]
+      },
+      "xlconcat_1_dout": {
+        "ports": [
+          "xlconcat_1/dout",
+          "fly_v_top_0/IRQ_n"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "MIO",
+          "fly_v_top_0/MIO"
+        ]
+      }
+    }
+  }
+}

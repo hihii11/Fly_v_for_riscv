@@ -1,0 +1,1035 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>risc_v_soc_test_AHB_Lite_IIC_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF">clk</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN">risc_v_soc_test_REF_CLK</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>s0_HCLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_HCLK</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S0_HCLK.FREQ_HZ"/>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_HCLK.PHASE">0.000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_HCLK.CLK_DOMAIN">risc_v_soc_test_REF_CLK</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_HCLK.ASSOCIATED_BUSIF"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_HCLK.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S0_HCLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>iic_data</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="gpio_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TRI_O</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iic_sda_o</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TRI_T</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iic_sda_out</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TRI_I</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>iic_sda_i</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S0_AHB</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="ahblite" spirit:version="2.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="ahblite_rtl" spirit:version="2.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HTRANS</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_htrans</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HPROT</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hport</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HSIZE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hsize</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HRDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hrdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HRESP</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hresp</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HWRITE</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hwrite</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HADDR</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_haddr</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HBURST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hburst</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>HWDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_hwdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>s0_nREST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s0_nREST</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.S0_NREST.POLARITY">ACTIVE_LOW</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.S0_NREST.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>AHB_Lite_IIC</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Jul 21 15:55:18 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:901a5ffe</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsynthesiswrapper</spirit:name>
+        <spirit:displayName>Verilog Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>risc_v_soc_test_AHB_Lite_IIC_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Jul 21 15:55:18 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:901a5ffe</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>AHB_Lite_IIC</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Jul 21 15:55:18 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:d07f0d26</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_verilogsimulationwrapper</spirit:name>
+        <spirit:displayName>Verilog Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>verilogSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>verilog</spirit:language>
+        <spirit:modelName>risc_v_soc_test_AHB_Lite_IIC_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_verilogsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Jul 21 15:55:18 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:d07f0d26</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Thu Jul 21 15:57:58 UTC 2022</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:901a5ffe</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iic_sda_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iic_sda_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iic_sda_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iic_scl</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iic_qvld</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>iic_INT</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_HCLK</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_nREST</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_haddr</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AHB_ADDR_WIDTH&apos;)) - 1)">4</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hwrite</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_htrans</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hburst</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hsize</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hport</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hresp</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hready_i</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hready_o</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hsel</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hwdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AHB_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s0_hrdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S_AHB_DATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>wire</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_S_AHB_DATA_WIDTH</spirit:name>
+        <spirit:displayName>C S Ahb Data Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AHB_DATA_WIDTH">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S_AHB_ADDR_WIDTH</spirit:name>
+        <spirit:displayName>C S Ahb Addr Width</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S_AHB_ADDR_WIDTH">5</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/1fc3/src/IIC_Master_2.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/1fc3/src/AHB_Lite_IIC.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/risc_v_soc_test_AHB_Lite_IIC_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/1fc3/src/IIC_AHB_Lite_pipe_inist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/1fc3/src/IIC_Master_2.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>../../ipshared/1fc3/src/AHB_Lite_IIC.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_verilogsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/risc_v_soc_test_AHB_Lite_IIC_0_0.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>risc_v_soc_test_AHB_Lite_IIC_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>risc_v_soc_test_AHB_Lite_IIC_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>risc_v_soc_test_AHB_Lite_IIC_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>risc_v_soc_test_AHB_Lite_IIC_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>risc_v_soc_test_AHB_Lite_IIC_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>AHB_Lite_IIC_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_S_AHB_DATA_WIDTH</spirit:name>
+      <spirit:displayName>C S Ahb Data Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AHB_DATA_WIDTH">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S_AHB_ADDR_WIDTH</spirit:name>
+      <spirit:displayName>C S Ahb Addr Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S_AHB_ADDR_WIDTH">5</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">risc_v_soc_test_AHB_Lite_IIC_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>AHB_Lite_IIC_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>18</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dce2670_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a81448_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26550f51_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a46636e_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7186a3ad_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@397d3cd0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2da9db46_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@301a6924_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55fa0f8_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49e0e485_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19a695e9_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b14c109_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a0fca1c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c06d067_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f38d929_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11c94f08_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70cd928d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@577732df_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@205b350a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b65b95b_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2911c02c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@506b2f00_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7320fdcd_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4622a723_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d0d99dc_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1bfaa5b7_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a89d0d9_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30588bcc_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22a49c84_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@732fdde8_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a21adba_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c0fdd1_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b548f17_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39d37c44_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22f901b4_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55f4e729_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4242fb29_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23f212f6_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2acecb88_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e6a8293_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@286feeaa_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b92e9c7_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ada78f1_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b0f6bfd_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1192a0cb_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6df854f5_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@8893bcf_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77bd9d71_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66fe6613_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4fd46bd0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66b3ec10_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74b35bd_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7fc7c28c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f6b3a3d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ce15920_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75ca98da_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a257d81_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c80b823_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@642b12b1_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68c439f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a3a0aca_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ed5ca05_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@54a8e88d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33fb416b_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@657011ca_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5350ac37_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ca5f77e_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@358b9e8c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76eb23a7_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e75e1d3_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@446e3d8_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37f88ddb_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a0b4c86_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@288da981_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4edc255f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45f93814_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6eeb113_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f6a6ead_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15a1d96_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30ee2ef3_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cae9f7c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7254e648_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5086e0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1253a8cd_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@296a0eae_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d968d1_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@221dae01_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@66006cff_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@205d2f85_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79e856b5_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19d794e6_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1444cd44_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22e389c6_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@202b00a2_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14c332a9_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e274d5_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22fbb77a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6f59ad89_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d307423_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61b66bf3_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74ec3deb_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@701ea112_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c931f02_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e2fb593_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@abde090_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1eb4287d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@39fe226d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58d1ff0d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e80950b_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34c07aef_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2ed9eb31_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cd21939_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d9d1710_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4940a150_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@480405a3_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e2674bb_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11494ed0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5adb4851_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a6cddd5_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@811ccd8_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d4c600e_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fbd3228_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e8e03c3_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7de8a9d3_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22332a5d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@449a8233_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68ea48de_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f4a032c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58a75311_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b0be463_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77a846c1_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f732757_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1858651e_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7686f509_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c83d262_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e8c06a5_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44a93507_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b25e2e4_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43b1ac74_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e77f34_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52386b9a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@617d1c29_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69d5e9ed_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a0a9e13_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3df0277d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c192aea_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35aabce9_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38cad4a0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ab7b3e2_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29d4e299_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41222ac7_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fa27e46_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e468b85_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21152049_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ab3aed9_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@595a162c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5da3d38d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e118f27_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69ad4c5f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@566c87ad_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61b71cf4_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29011285_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28928a50_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d3dab4_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a96718e_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3841aa0d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d723633_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@180603d4_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e333a1a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ad6652d_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@313493e0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23e424e9_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fceef74_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@eef7d2f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50539faf_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d5c27be_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ebe52c0_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14a056f3_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b9a6a77_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@546b5b01_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ba43a54_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63e1fc82_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ac2baff_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@79dde5cd_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d458813_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77a58732_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e79154f_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20388068_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@244fd1b7_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65d1631a_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34c934f4_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4430bbd8_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d4ee66c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13854582_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ea6f10c_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f66ad17_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@110cef43_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c4b91ce_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cdc3828_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a0d99f7_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f086530_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@969e764_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20c22f07_ARCHIVE_LOCATION">d:/Vivado/project/AMBA/AMBA_IP_core/AMBA_ips/ahb_i2c</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S0_HCLK.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="e1fe5107"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="6a6d0826"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="5225df05"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="ef43ee86"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="f67da6ba"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
